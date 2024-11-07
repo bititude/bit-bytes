@@ -1,0 +1,85 @@
+// Vitest Snapshot v1, https://vitest.dev/guide/snapshot.html
+
+exports[`AddTodo.tsx > should match snapshots > match's default snapshot 1`] = `
+<DocumentFragment>
+  <div
+    data-testid="add-todo-form"
+  >
+    <textarea
+      class="w-full border-2 border-gray-400 rounded-md p-3 font-bold mb-4 shadow-md"
+    />
+    <div
+      class="flex items-start w-full justify-between"
+    >
+      <button
+        class="bg-green-500 h-[50px] font-bold text-white rounded-md shadow-md hover:scale-105 mb-4 text-base disabled:cursor-not-allowed w-[100px] flex items-center justify-center hover:shadow-lg disabled:bg-gray-400"
+        disabled=""
+      >
+        <span
+          class="text-lg"
+        >
+          ADD
+        </span>
+        <span
+          class="text-4xl ml-3 pb-2"
+        >
+          +
+        </span>
+      </button>
+    </div>
+  </div>
+</DocumentFragment>
+`;
+
+exports[`AddTodo.tsx > should match snapshots > match's loading state snapshot 1`] = `
+<DocumentFragment>
+  <div
+    data-testid="add-todo-form"
+  >
+    <textarea
+      class="w-full border-2 border-gray-400 rounded-md p-3 font-bold mb-4 shadow-md"
+      disabled=""
+    >
+      My new task
+    </textarea>
+    <div
+      class="flex items-start w-full justify-between"
+    >
+      <button
+        class="bg-green-500 h-[50px] font-bold text-white rounded-md shadow-md hover:scale-105 mb-4 text-base disabled:cursor-not-allowed w-[100px] flex items-center justify-center hover:shadow-lg disabled:bg-gray-400"
+        disabled=""
+      >
+        <span
+          class="text-lg"
+        >
+          ADD
+        </span>
+        <span
+          class="text-4xl ml-3"
+          data-testid="spinner"
+        >
+          <svg
+            class="mr-3 h-5 w-5 animate-spin text-accent"
+            fill="none"
+            viewBox="0 0 24 24"
+          >
+            <circle
+              class="opacity-25"
+              cx="12"
+              cy="12"
+              r="10"
+              stroke="currentColor"
+              stroke-width="4"
+            />
+            <path
+              class="opacity-75"
+              d="M4 12a8 8 0 018-8V0C5.373 0 0 5.373 0 12h4zm2 5.291A7.962 7.962 0 014 12H0c0 3.042 1.135 5.824 3 7.938l3-2.647z"
+              fill="currentColor"
+            />
+          </svg>
+        </span>
+      </button>
+    </div>
+  </div>
+</DocumentFragment>
+`;

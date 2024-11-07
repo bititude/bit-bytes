@@ -1,0 +1,64 @@
+// Vitest Snapshot v1, https://vitest.dev/guide/snapshot.html
+
+exports[`TodoList.tsx > should match snapshot > should match default snapshot 1`] = `
+<DocumentFragment>
+  <div
+    class="w-full"
+    data-testid="pending-todos"
+  >
+    <h1
+      class="font-bold text-gray-700 text-xl self-start my-4"
+    >
+      Pending
+    </h1>
+    <p>
+      No Pending todos 🥳
+    </p>
+  </div>
+  <h1
+    class="font-bold text-gray-700 text-xl self-start my-4"
+  >
+    Completed
+  </h1>
+  <div
+    data-testid="completed-todos"
+  >
+    <div
+      class="border-2 border-gray-400 py-2 px-4 font-bold rounded-md shadow-md mb-4 flex items-center justify-between w-full"
+      data-testid="todo"
+    >
+      <p
+        class="w-4/5 text-gray-500"
+        data-testid="striked-todo"
+      >
+         
+        <s
+          class="decoration-2"
+        >
+          <i>
+            wash car
+          </i>
+        </s>
+      </p>
+      <button
+        class="rounded-full bg-red-500   w-6 h-6 flex items-start justify-center hover:scale-105 "
+        data-testid="todo-delete-btn"
+      >
+        <span
+          class=" text-white font-extrabold "
+        >
+          ×
+        </span>
+      </button>
+    </div>
+  </div>
+</DocumentFragment>
+`;
+
+exports[`TodoList.tsx > should match snapshot > should match loading snapshot 1`] = `
+<DocumentFragment>
+  <h1>
+    Loading
+  </h1>
+</DocumentFragment>
+`;
